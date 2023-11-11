@@ -2,12 +2,33 @@
 @inherits LayoutComponentBase
 
 <style>
-    .no-bullets {
-        list-style: none;
+    body {
+        background-color: #f8f9fa; /* Light background color */
+        color: #343a40; /* Text color */
+        font-family: 'Arial', sans-serif; /* Specify a font family */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
     }
 
     .section-container {
         text-align: center;
+        margin: 20px; /* Add margin for each section */
+        padding: 20px; /* Add padding for each section */
+        background-color: #ffffff; /* White background color */
+        border-radius: 8px; /* Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    h1, h2, p {
+        color: #007bff; /* Header and paragraph color */
+    }
+
+    ul {
+        padding: 0; /* Remove default padding for unordered lists */
+    }
+
+    li {
+        margin-bottom: 8px; /* Add spacing between list items */
     }
 </style>
 
@@ -27,7 +48,7 @@
     <h2>Experience</h2>
     <ul class="no-bullets">
         <li>Back End Developer at Sterling Bank, Jun 2023 - Present</li>
-        <!-- Add more experience entries as needed -->
+        
     </ul>
 </div>
 
@@ -45,7 +66,7 @@
         <li>C#</li>
         <li>ASP.NET Core</li>
         <li>Entity Framework</li>
-        <!-- Add more technologies as needed -->
+       
     </ul>
 </div>
 
@@ -53,6 +74,6 @@
     <h2>Certifications</h2>
     <ul class="no-bullets">
         <li>Scrum Fundamentals Certified (SFC®) - SCRUMstudy, Oct 2022 - Nov 2022</li>
-        <!-- Add more certifications as needed -->
+        
     </ul>
 </div>
