@@ -1,0 +1,31 @@
+﻿@page "/Skills"
+@using Ezeji_Udoka_Akans.Models;
+
+<h2>Skills</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th> Skills</th>
+            <th> RateLevel</th>
+            <th> Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var skills in Model)
+        {
+            <tr>              
+                <td>@skills.Description</td>
+                <td>@skills.Skills</td>
+                <td>@skills.RateLevel</td>
+                <td>@skills.Rate</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+    @code {
+        List<SkillsModel> Model = new();
+    }

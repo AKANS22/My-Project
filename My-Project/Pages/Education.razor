@@ -1,0 +1,55 @@
+﻿@page "/Education"
+@using Ezeji_Udoka_Akans.Models;
+
+<h2>Education</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>SchoolName</th>
+            <th>Certificate</th>
+            <th>DateTime</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var education in Model)
+        {
+            <tr>
+                <td>@education.SchoolName</td>
+                <td>@education.Certificate</td>
+                <td>@education.DateTime</td>
+                <td>@education.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    // Initialize the Model list with manually provided data
+    List<EducationModel> Model = new List<EducationModel>
+    {
+        new EducationModel
+        {
+            SchoolName = "SCRUMstudy",
+            Certificate = "Scrum Fundamentals Certified, SCRUM Methodologies",
+            DateTime = "Oct 2022 - Nov 2022 ",
+            Description = "Scrum Fundamentals Certified (SFC®) professionals are facilitators who ensure that the Scrum Team is provided with an environment conducive to completing the project successfully. The Scrum Master guides, facilitates, and teaches Scrum practices to everyone involved in the project; clears impediments for the team and ensures that Scrum processes are being followed."
+        },
+        new EducationModel
+        {
+            SchoolName = "Imo State University",
+            Certificate = "B.Sc.INDUSTRIAL CHEMISTRY",
+            DateTime = "2012 - 2016",
+            Description = ""
+        },
+        new EducationModel
+        {
+            SchoolName = "UNIQUE COMPUTER INSTITUTE OWERRI",
+            Certificate = "CERTIFICATE IN COMPUTER APPLICATION TO BUSINESS TRANSACTION",
+            DateTime = "2012 - 2012 ",
+            Description = "Computer Application in Business is a course designed to train students on the use of personal computers in the world of business. The knowledge gained in this course would lead to proficiency in electronic business management."
+        }
+        // Add more education entries as needed
+    };
+}
